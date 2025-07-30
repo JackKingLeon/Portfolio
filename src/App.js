@@ -8,7 +8,7 @@ export default function Portfolio() {
         </p>
         <div className="mt-4 flex justify-center gap-6">
           <a
-            href="www.linkedin.com/in/jack-leon-a92b4b219"
+            href="https://www.linkedin.com/in/jack-leon-a92b4b219"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -28,6 +28,7 @@ export default function Portfolio() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
+            download
           >
             Resume
           </a>
@@ -39,18 +40,23 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
             title="Solar Panel Tracking System"
-            description="Designed and built a dual-axis solar tracker with actuators and Hall sensors."
-            tools="Arduino, Hall Sensors, CAD, MATLAB"
+            description="Designed and built a dual-axis solar tracker with actuators and Hall sensors. Includes Raspberry Pi, sensors, and control logic."
+            tools="Arduino, Hall Sensors, CAD, MATLAB, Raspberry Pi"
+            image="/images/solar-tracker.png"
+            link="https://github.com/JackKingLeon/solar-tracker"
           />
           <ProjectCard
             title="Assistive Stander"
-            description="Built a custom standing device for an individual with imparied motor functions."
-            tools="Solidworks"
+            description="Built a custom standing device for an individual with impaired motor functions. Prototyped with adjustable height and supports."
+            tools="SolidWorks, Manual Machining"
+            image="/images/stander.png"
+            link="/projects/stander"
           />
           <ProjectCard
-            title="A1 Customs Intern"
-            description="Assisted with multiple projects via CAD and drawings."
-            tools="Solidworks"
+            title="A1 Customs Internship"
+            description="Supported custom fabrication projects, created mechanical drawings, and performed revisioning using SolidWorks."
+            tools="SolidWorks, Drawings"
+            image="/images/a1-customs.png"
           />
         </div>
       </section>
@@ -67,8 +73,7 @@ export default function Portfolio() {
           </div>
           <div>
             <span className="font-semibold">Fabrication & Testing:</span> 3D
-            Printing, Laser Cutting, CNC, Soldering, Instron 4505 Rockewell
-            Tester
+            Printing, Laser Cutting, CNC, Soldering, Instron 4505
           </div>
           <div>
             <span className="font-semibold">Embedded:</span> Arduino, Raspberry
@@ -76,12 +81,12 @@ export default function Portfolio() {
           </div>
           <div>
             <span className="font-semibold">Software:</span> Python, Git, Java,
-            Docker, OOP
+            Docker, Linux
           </div>
         </div>
       </section>
 
-      <section className="text-center">
+      <section className="text-center mt-12">
         <p className="text-gray-500 text-sm">
           © 2025 Jack Leon. All rights reserved.
         </p>
@@ -90,12 +95,29 @@ export default function Portfolio() {
   );
 }
 
-function ProjectCard({ title, description, tools }) {
+function ProjectCard({ title, description, tools, image, link }) {
   return (
-    <div className="border rounded-2xl p-6 shadow hover:shadow-lg transition bg-white">
+    <div className="border rounded-2xl p-6 shadow hover:shadow-lg transition bg-white flex flex-col">
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className="mb-4 rounded-xl object-cover max-h-48 w-full"
+        />
+      )}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 mb-2">{description}</p>
-      <p className="text-sm text-gray-500 italic">Tools used: {tools}</p>
+      <p className="text-sm text-gray-500 italic mb-4">Tools used: {tools}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-block text-blue-600 font-medium hover:underline"
+        >
+          Learn More →
+        </a>
+      )}
     </div>
   );
 }
