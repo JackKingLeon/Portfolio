@@ -50,7 +50,7 @@ export default function Portfolio() {
             description="Built a custom standing device for an individual with impaired motor functions. Prototyped with adjustable height and supports."
             tools="SolidWorks, Manual Machining"
             image="/images/stander.png"
-            link="/projects/stander"
+            link="/projects/StanderProject"
           />
           <ProjectCard
             title="A1 Customs Internship"
