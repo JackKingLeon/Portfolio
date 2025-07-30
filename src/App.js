@@ -8,7 +8,7 @@ export default function Portfolio() {
         </p>
         <div className="mt-4 flex justify-center gap-6">
           <a
-            href="https://www.linkedin.com"
+            href="www.linkedin.com/in/jack-leon-a92b4b219"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -16,7 +16,7 @@ export default function Portfolio() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/JackKingLeon"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -40,12 +40,17 @@ export default function Portfolio() {
           <ProjectCard
             title="Solar Panel Tracking System"
             description="Designed and built a dual-axis solar tracker with actuators and Hall sensors."
-            tools="Arduino, Hall Sensors, CAD, SolarCalc"
+            tools="Arduino, Hall Sensors, CAD, MATLAB"
           />
           <ProjectCard
-            title="Temperature-Controlled Fan"
-            description="Built a fan with PID control and LCD interface to regulate ambient temperature."
-            tools="Arduino, PID, LCD, Thermistor"
+            title="Assistive Stander"
+            description="Built a custom standing device for an individual with imparied motor functions."
+            tools="Solidworks"
+          />
+          <ProjectCard
+            title="A1 Customs Intern"
+            description="Assisted with multiple projects via CAD and drawings."
+            tools="Solidworks"
           />
         </div>
       </section>
@@ -54,23 +59,24 @@ export default function Portfolio() {
         <h2 className="text-3xl font-semibold mb-6 border-b pb-2">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-gray-700">
           <div>
-            <span className="font-semibold">CAD:</span> SolidWorks, Fusion 360
+            <span className="font-semibold">CAD:</span> SolidWorks, GD&T
           </div>
           <div>
             <span className="font-semibold">Simulation:</span> MATLAB, Simulink,
             ANSYS
           </div>
           <div>
-            <span className="font-semibold">Fabrication:</span> 3D Printing,
-            Laser Cutting, CNC
+            <span className="font-semibold">Fabrication & Testing:</span> 3D
+            Printing, Laser Cutting, CNC, Soldering, Instron 4505 Rockewell
+            Tester
           </div>
           <div>
             <span className="font-semibold">Embedded:</span> Arduino, Raspberry
             Pi
           </div>
           <div>
-            <span className="font-semibold">Software:</span> Python, Git, Linux,
-            Docker
+            <span className="font-semibold">Software:</span> Python, Git, Java,
+            Docker, OOP
           </div>
         </div>
       </section>
