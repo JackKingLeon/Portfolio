@@ -95,8 +95,8 @@ export default function Portfolio() {
 }
 
 function ProjectCard({ title, description, tools, image, link }) {
-  return (
-    <div className="border rounded-2xl p-6 shadow hover:shadow-lg transition bg-white flex flex-col">
+  const CardContent = (
+    <div className="border rounded-2xl p-6 shadow hover:shadow-lg transition bg-white flex flex-col h-full">
       {image && (
         <img
           src={image}
@@ -107,16 +107,26 @@ function ProjectCard({ title, description, tools, image, link }) {
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 mb-2">{description}</p>
       <p className="text-sm text-gray-500 italic mb-4">Tools used: {tools}</p>
+      {/* Optional: You can still include the arrow */}
       {link && (
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto inline-block text-blue-600 font-medium hover:underline"
-        >
+        <span className="mt-auto text-blue-600 font-medium hover:underline">
           Learn More →
-        </a>
+        </span>
       )}
     </div>
+  );
+
+  // Wrap the entire card in <a> only if a link is provided
+  return link ? (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block h-full"
+    >
+      {CardContent}
+    </a>
+  ) : (
+    CardContent
   );
 }
