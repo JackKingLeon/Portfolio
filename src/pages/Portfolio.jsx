@@ -107,12 +107,6 @@ function ProjectCard({ title, description, tools, image, link }) {
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 mb-2">{description}</p>
       <p className="text-sm text-gray-500 italic mb-4">Tools used: {tools}</p>
-      {/* Optional: You can still include the arrow */}
-      {link && (
-        <span className="mt-auto text-blue-600 font-medium hover:underline">
-          Learn More →
-        </span>
-      )}
     </div>
   );
 
