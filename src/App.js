@@ -56,7 +56,6 @@ export default function Portfolio() {
             title="A1 Customs Internship"
             description="Supported custom fabrication projects, created mechanical drawings, and performed revisioning using SolidWorks."
             tools="SolidWorks, Drawings"
-            image="/images/a1-customs.png"
           />
         </div>
       </section>
