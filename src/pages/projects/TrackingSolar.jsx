@@ -1,5 +1,5 @@
 // src/pages/projects/StanderProject.jsx
-export default function StanderProject() {
+export default function TrackingSolar() {
   return (
     <main className="min-h-screen p-8 bg-white font-sans text-gray-900">
       <h1 className="text-4xl font-bold mb-4">
