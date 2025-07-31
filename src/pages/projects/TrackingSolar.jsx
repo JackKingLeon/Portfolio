@@ -1,4 +1,4 @@
-// src/pages/projects/StanderProject.jsx
+// src/pages/projects/TrackingSolar.jsx
 export default function TrackingSolar() {
   return (
     <main className="min-h-screen p-8 bg-white font-sans text-gray-900">
@@ -7,77 +7,93 @@ export default function TrackingSolar() {
       </h1>
 
       <p className="mb-4">
-        My senior year capstone project's goal was to improve LMU's solar arrays
-        in a cost effective and novel way. My group chose to create a prototype
-        for a tracking solar panel that could be scaled to power at least one of
-        the buildings on campus. My job was to handle the electrical section of
-        the project including designing the circuit, picking out and coding the
-        actuators, and coding any and all control systems and chips neccessary
-        to track the sun.
+        As part of my senior capstone project at Loyola Marymount University, my
+        team set out to improve campus energy efficiency by enhancing the
+        existing solar array infrastructure. We developed a scalable solar panel
+        tracking prototype designed to optimize energy capture throughout the
+        day. The long-term vision was to implement the design at scale to power
+        one or more buildings on campus.
       </p>
+
+      <p className="mb-4">
+        My primary responsibility was leading the electrical and software
+        systems. This included:
+      </p>
+
+      <ul className="list-disc list-inside mb-4 text-gray-700">
+        <li>Designing the power and control circuit</li>
+        <li>Selecting and programming the actuators</li>
+        <li>Developing all embedded software for sun-tracking control logic</li>
+        <li>
+          Integrating microcontrollers and communication between components
+        </li>
+      </ul>
 
       <div className="flex justify-center">
         <img
           src="/images/physicalSystem.jpg"
-          alt="High Level system Overview"
-          className="mb-6"
+          alt="Prototype Solar Tracking System"
+          className="mb-6 rounded shadow-md"
         />
       </div>
 
       <p className="mb-4">
-        I designed the system to be easily scaleable with identacle code bases
-        in each arduino, a central control system (the raspberry pi in the
-        prototype), and a display that would give important
-        data/notifications/information at a glance
+        I designed the system architecture with scalability in mind: each solar
+        panel operates independently using identical Arduino-based firmware. A
+        central Raspberry Pi serves as the communication and data processing
+        hub. The system also includes an onboard display to provide real-time
+        metrics, diagnostics, and alert information.
       </p>
 
       <div className="flex justify-center">
         <img
           src="/images/systemOverview.png"
-          alt="High Level system Overview"
-          className="mb-6"
+          alt="System Architecture Diagram"
+          className="mb-6 rounded shadow-md"
         />
       </div>
 
+      <p className="mb-4">The complete electrical system includes:</p>
+
+      <ul className="list-disc list-inside mb-4 text-gray-700">
+        <li>Current and voltage sensors for energy monitoring</li>
+        <li>Step-down voltage converters for regulated power distribution</li>
+        <li>Raspberry Pi for central control and Wi-Fi connectivity</li>
+        <li>Arduino for direct actuator control and sensor interfacing</li>
+        <li>
+          Motor drivers and relays to manage actuator power and logic-level
+          isolation
+        </li>
+        <li>Serial and GPIO communication between subsystems</li>
+      </ul>
+
       <p className="mb-4">
-        The code for the capstone can be found on my github
+        You can explore the full project repository on GitHub&nbsp;
         <a
           href="https://github.com/JackKingLeon/solarPanelCapstone"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
-          (here)
+          here
         </a>
-        and the circuit is shown at the bottom of this page and can be
-        downloaded
+        , and download the full-resolution circuit schematic&nbsp;
         <a
           href="/circuit.png"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
-          here.
+          here
         </a>
-        The full circuit consisted of current and voltage sensors to collect
-        data, a handful of step downs for voltage management, a raspberry pi, an
-        arduino, a couple relays so the raspberry pi can freely cut power to
-        systems that do not need it, components to facilitate communication
-        between the pi and sensors and the arduino and the pi, motor shields for
-        the actuators to plug into the arduino, and the actuators themselves.
+        .
       </p>
-
-      <ul className="list-disc list-inside mb-4 text-gray-700">
-        <li>Custom CAD design using SolidWorks</li>
-        <li>Fabricated with manual machining</li>
-        <li>Tailored ergonomics and adjustability</li>
-      </ul>
 
       <div className="flex justify-center">
         <img
           src="/images/circuitShematic.png"
-          alt="Tracking Solar Panel Circuit"
-          className="mb-6"
+          alt="Solar Panel Tracking Circuit Diagram"
+          className="mb-6 rounded shadow-md"
         />
       </div>
     </main>
