@@ -41,11 +41,11 @@ export default function Portfolio() {
         <h2 className="text-3xl font-semibold mb-6 border-b pb-2">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
-            title="Solar Panel Tracking System"
+            title="Solar Panel Tracking System Capstone"
             description="Designed and built a dual-axis solar tracker with actuators and Hall sensors. Includes Raspberry Pi, sensors, and control logic."
             tools="Arduino, Hall Sensors, CAD, MATLAB, Raspberry Pi"
             image="/images/solar-tracker.png"
-            link="https://github.com/JackKingLeon/solar-tracker"
+            link="/projects/TrackingSolar"
           />
           <ProjectCard
             title="Assistive Stander"
