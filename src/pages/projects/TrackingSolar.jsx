@@ -79,9 +79,18 @@ export default function TrackingSolar() {
         >
           here
         </a>
-        , and download the full-resolution circuit schematic&nbsp;
+        , download the full-resolution circuit schematic&nbsp;
         <a
           href="/circuit.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          here
+        </a>
+        , and download the published honors thesis&nbsp;
+        <a
+          href="https://digitalcommons.lmu.edu/honors-thesis/580"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
