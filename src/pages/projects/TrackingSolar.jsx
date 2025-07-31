@@ -19,6 +19,7 @@ export default function StanderProject() {
         src="/images/circuitShematic.png"
         alt="Assistive Stander"
         className="mb-6"
+        style={{ alignSelf: "center" }}
       />
 
       <ul className="list-disc list-inside mb-4 text-gray-700">
