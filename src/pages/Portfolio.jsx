@@ -112,7 +112,6 @@ function ProjectCard({ title, description, tools, image, link }) {
     </div>
   );
 
-  // Wrap the entire card in <a> only if a link is provided
   return link ? (
     <Link to={link} className="block h-full">
       {CardContent}

@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/projects/stander" element={<StanderProject />} />
+        <Route path="/projects/StanderProject" element={<StanderProject />} />
         {/* Add more project detail pages as needed */}
       </Routes>
     </Router>
