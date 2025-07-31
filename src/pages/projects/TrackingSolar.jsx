@@ -15,12 +15,14 @@ export default function StanderProject() {
         actuators, and coding any and all control systems and chips neccessary
         to track the sun.
       </p>
+    
+    <div className="flex justify-center">
       <img
         src="/images/circuitShematic.png"
-        alt="Assistive Stander"
+        alt="Tracking Solar Panel Circuit"
         className="mb-6"
-        style={{ alignSelf: "center" }}
       />
+    </div>
 
       <ul className="list-disc list-inside mb-4 text-gray-700">
         <li>Custom CAD design using SolidWorks</li>
