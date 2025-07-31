@@ -33,6 +33,8 @@ export default function TrackingSolar() {
         <img
           src="/images/physicalSystem.jpg"
           alt="Prototype Solar Tracking System"
+          width={500}
+          height={500}
           className="mb-6 rounded shadow-md"
         />
       </div>
