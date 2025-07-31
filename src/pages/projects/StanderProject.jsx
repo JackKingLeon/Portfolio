@@ -3,9 +3,12 @@ export default function StanderProject() {
   return (
     <main className="min-h-screen p-8 bg-white font-sans text-gray-900">
       <h1 className="text-4xl font-bold mb-4">Assistive Stander Project</h1>
+
       <img
         src="/images/stander.png"
         alt="Assistive Stander"
+        width = {250}
+        height = {500}
         className="rounded-xl mb-6 w-full max-w-2xl"
       />
       <p className="mb-4">
