@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Portfolio() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-8 font-sans">
@@ -112,14 +114,9 @@ function ProjectCard({ title, description, tools, image, link }) {
 
   // Wrap the entire card in <a> only if a link is provided
   return link ? (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block h-full"
-    >
+    <Link to={link} className="block h-full">
       {CardContent}
-    </a>
+    </Link>
   ) : (
     CardContent
   );
