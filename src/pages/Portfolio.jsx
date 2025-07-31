@@ -44,7 +44,6 @@ export default function Portfolio() {
             title="Solar Panel Tracking System Capstone"
             description="Designed and built a dual-axis solar tracker with actuators and Hall sensors. Includes Raspberry Pi, sensors, and control logic."
             tools="Arduino, Hall Sensors, CAD, MATLAB, Raspberry Pi"
-            image="/images/solar-tracker.png"
             link="/projects/TrackingSolar"
           />
           <ProjectCard
