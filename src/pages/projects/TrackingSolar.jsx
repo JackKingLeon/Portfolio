@@ -2,7 +2,7 @@
 export default function TrackingSolar() {
   return (
     <main className="min-h-screen p-8 bg-white font-sans text-gray-900">
-      <h1 className="text-4xl font-bold mb-4">
+      <h1 className="text-5xl font-bold mb-8 text-center">
         Solar Panel Tracking System Capstone
       </h1>
 
