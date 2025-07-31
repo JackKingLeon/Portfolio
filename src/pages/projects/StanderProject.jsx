@@ -9,7 +9,7 @@ export default function StanderProject() {
         alt="Assistive Stander"
         width = {250}
         height = {500}
-        className="rounded-xl mb-6 w-full max-w-2xl"
+        className="rounded-xl mb-6"
       />
       <p className="mb-4">
         Built a custom standing device for an individual with impaired motor
